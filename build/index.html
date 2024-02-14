@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en" class="sm:scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/x-icon" href="Spellbook-Magic.ico">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Blackfur Spells</title>
+  </head>
+  <body
+    class="min-h-screen bg-indigo-200 dark:bg-indigo-950 dark:text-cyan-100"
+  >
+    <header class="bg-indigo-900 text-cyan-200 sticky top-0 z-10">
+      <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+        <h1 class="text-3xl font-medium">
+          <a href="#hero">🔮 Blackfur Spells</a>
+        </h1>
+        <div>
+          <button
+            id="burger-button"
+            class="text-3xl md:hidden cursor-pointer relative w-8 h-8"
+          >
+            <!--                &#9776;-->
+            <div
+              class="bg-cyan-300 w-8 h-1 rounded absolute top-4 -mt-0.5
+              transition-all duration 500 before:content-[''] before:bg-cyan-300
+              before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4
+              before:-translate-y-3 before:transition-all before:duration 500 after:content-['']
+              after:bg-cyan-300 after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4
+              after:translate-y-3 after:transition-all after:duration 500"
+            ></div>
+          </button>
+          <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
+            <a href="#books" class="hover:opacity-90">Magic to be taught</a>
+            <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+            <a href="#contact" class="hover:opacity-90">Send a messenger</a>
+          </nav>
+        </div>
+      </section>
+      <section
+        id="mobile-menu"
+        class="absolute top-68 bg-indigo-950/95 w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden"
+      >
+        <!--        <button class="text-8xl self-end px-6">-->
+        <!--            &times;-->
+        <!--        </button>-->
+        <nav
+          class="flex flex-col min-h-screen items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#hero" class="w-full text-center py-6 hover:opacity-80"
+            >Home</a
+          >
+          <a href="#books" class="w-full text-center py-6 hover:opacity-80"
+            >Our Books</a
+          >
+          <a
+            href="#testimonials"
+            class="w-full text-center py-6 hover:opacity-80"
+            >Testimonials</a
+          >
+          <a href="#contact" class="w-full text-center py-6 hover:opacity-80"
+            >Send a messenger</a
+          >
+          <a href="#footer" class="w-full text-center py-6 hover:opacity-80"
+            >Legal</a
+          >
+        </nav>
+      </section>
+    </header>
+    <main class="max-w-4xl mx-auto">
+      <section
+        class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
+        id="hero"
+      >
+        <article class="sm:w-1/2">
+          <h2
+            class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-indigo-900 dark:text-cyan-100"
+          >
+            Make the mind
+            <span class="text-red-700 dark:text-amber-300"
+              >control much more</span
+            >
+            than just own body...
+          </h2>
+          <p
+            class="max-w-md text-2xl mt-4 text-center sm:text-left text-indigo-800 dark:text-cyan-50"
+          >
+            We are sharing knowledge with the ones who overcome the willful
+            blindness. From creation to destruction and proper institution is
+            our endless path...
+          </p>
+          <p
+            class="max-w-md text-2xl mt-4 text-center sm:text-left text-indigo-800 dark:text-cyan-50"
+          >
+            Blackfur said one day
+          </p>
+        </article>
+        <img src="img/magician.png" alt="flying magician" />
+      </section>
+      <hr class="mx-auto bg-black dark:bg-cyan-50 w-1/2" />
+      <section
+        id="books"
+        class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-indigo-900 dark:text-cyan-100"
+        >
+          Conjuration books we offer
+        </h2>
+        <ul
+          class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8"
+        >
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-indigo-200 dark:bg-indigo-950 py-6 px-2 rounded-3xl shadow-xl"
+          >
+            <img
+              src="img/magicBookSanity.png"
+              alt="Inner Sanity Grimoire"
+              class="w-1/2 mb-6"
+            />
+            <h3 class="text-3xl text-center text-indigo-900 dark:text-cyan-100">
+              Inner Sanity Grimoire
+            </h3>
+            <p
+              class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              549$
+            </p>
+            <p
+              class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              Not much for a sight beyond
+            </p>
+          </li>
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-indigo-200 dark:bg-indigo-950 py-6 px-2 rounded-3xl shadow-xl"
+          >
+            <img
+              src="img/TomeOfDragonFlame.png"
+              alt="Tome of the dragon flame"
+              class="w-1/2 mb-6"
+            />
+            <h3 class="text-3xl text-center text-indigo-900 dark:text-cyan-100">
+              Tome of the dragon flame
+            </h3>
+            <p
+              class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              799$
+            </p>
+            <p
+              class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              Affordable mass destruction tool
+            </p>
+          </li>
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-indigo-200 dark:bg-indigo-950 py-6 px-2 rounded-3xl shadow-xl"
+          >
+            <img
+              src="img/InvokationGuidence.png"
+              alt="Soul channel spell"
+              class="w-1/3 mb-6"
+            />
+            <h3 class="text-3xl text-center text-indigo-900 dark:text-cyan-100">
+              Invocation Guidance
+            </h3>
+            <p
+              class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              1199$
+            </p>
+            <p
+              class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              Your own servants are priceless
+            </p>
+          </li>
+        </ul>
+      </section>
+      <hr class="mx-auto bg-black dark:bg-cyan-50 w-1/2" />
+      <section
+        id="testimonials"
+        class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-indigo-900 dark:text-cyan-100"
+        >
+          Testimonials
+        </h2>
+        <figure class="my-12">
+          <blockquote
+            class="bg-indigo-900 dark:bg-indigo-200 pl-14 pr-8 py-12 rounded-3xl relative"
+          >
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-cyan-100 dark:text-indigo-900 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white dark:before:text-black before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white dark:after:text-black after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              Blackfur is a great source of knowledge! Every time I visit there
+              is something new to get and use! The shipping is also incredible.
+              As soon as a messenger reaches the vendor, a portal opens right in
+              my apartment and the mage courier gently delivers an ordered book.
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400"
+          >
+            &#8212; Rostor B. Loventte, Archivarius
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="bg-indigo-900 dark:bg-indigo-200 pl-14 pr-8 py-12 rounded-3xl relative"
+          >
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-cyan-100 dark:text-indigo-900 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white dark:before:text-black before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white dark:after:text-black after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              I was afraid to buy anything like mage attributes and spellbooks.
+              But now I'm able to use my own will to summon the Ancients for
+              endless source power!
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400"
+          >
+            &#8212; Figaro O. Gustavo, The Sorcerer's apprentice
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="bg-indigo-900 dark:bg-indigo-200 pl-14 pr-8 py-12 rounded-3xl relative"
+          >
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-cyan-100 dark:text-indigo-900 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white dark:before:text-black before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white dark:after:text-black after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              These people changed my world! Upon opening the carefully packaged
+              book, I immediately received the Sight Beyond. Not to mention the
+              discouraging pages of mind expansion.
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400"
+          >
+            &#8212; Juliana S. Aroguessa, The bank worker
+          </figcaption>
+        </figure>
+      </section>
+      <hr class="mx-auto bg-black dark:bg-cyan-50 w-1/2" />
+      <section
+        id="contact"
+        class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-indigo-900 dark:text-cyan-100"
+        >
+          Send us a messenger
+        </h2>
+        <form
+          action=""
+          class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col item-left gap-4"
+        >
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            minlength="3"
+            maxlength="60"
+            placeholder="Your Subject"
+            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+          />
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+          ></textarea>
+          <button
+            class="bg-red-700 hover:bg-red-600 active:bg-red-800 text-slate-100 dark:bg-amber-300 dark:hover:bg-amber-200 dark:active:bg-amber-400 dark:text-indigo-900 p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer" class="bg-indigo-900 text-cyan-200 text-xl">
+      <section
+        class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between"
+      >
+        <address>
+          <h2>Blackfur Spells Elin-Woods, Inc.</h2>
+          37 Rag Street<br />
+          Mitonhold, Utonheld 91918-5545<br />
+          Email:
+          <a href="mailto:blackfur@elinwoods.com">blackfur@elinwoods.com</a
+          ><br />
+          Phone: <a href="tel:+1919191919">(191) 919-1919</a>
+        </address>
+        <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+          <a href="#books" class="hover:opacity-90">Our books</a>
+          <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+          <a href="#contact" class="hover:opacity-90">Contact Us</a>
+        </nav>
+        <div class="flex flex-col sm:gap-2">
+          <p class="text-right">Copyright &copy; <span id="year"></span></p>
+          <p class="text-right">All rights not reserved</p>
+        </div>
+      </section>
+    </footer>
+    <script src="/src/main.js" defer></script>
+  </body>
+</html>
